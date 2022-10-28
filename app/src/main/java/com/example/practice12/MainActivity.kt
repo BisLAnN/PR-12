@@ -32,23 +32,22 @@ class MainActivity : AppCompatActivity() {
     fun checkBoxApple(view: View) {
         var imageViewApple:ImageView=findViewById(R.id.imageViewApple)
         imageViewApple.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.apple))
-        val checkBoxApple:CheckBox=findViewById(R.id.checkBox3)
+        val checkBoxApple:CheckBox=findViewById(R.id.checkBox)
         if (checkBoxApple.isChecked==false)
             imageViewApple.setImageDrawable(null)
     }
     fun checkBoxPear(view: View) {
         var imageViewPear:ImageView=findViewById(R.id.imageViewPear)
         imageViewPear.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.pear))
-        val checkBoxApple:CheckBox=findViewById(R.id.checkBox2)
-        if (checkBoxApple.isChecked==false)
+        val checkBoxPear:CheckBox=findViewById(R.id.checkBox2)
+        if (checkBoxPear.isChecked==false)
             imageViewPear.setImageDrawable(null)
     }
     fun checkBoxGrapes(view: View) {
-        var imageViewApple:ImageView=findViewById(R.id.imageViewApple)
-        imageViewApple.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.grapes))
-        val checkBoxApple:CheckBox=findViewById(R.id.checkBox)
-        if (checkBoxApple.isChecked==false)
-            imageViewApple.setImageDrawable(null)
+        var imageViewGrapes:ImageView=findViewById(R.id.imageViewGrapes)
+        imageViewGrapes.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.grapes))
+        val checkBoxGrapes:CheckBox=findViewById(R.id.checkBox3)
+        if (checkBoxGrapes.isChecked==false)
+            imageViewGrapes.setImageDrawable(null)
     }
-
 }
